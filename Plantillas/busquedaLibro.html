@@ -1,0 +1,31 @@
+{% extends "padre.html" %}
+<html>
+    
+<head>
+
+<title> 
+
+Busqueda de Libro
+
+</title>
+
+
+</head>
+<body>
+
+
+
+{% block content%}  
+    
+    <h2>Ingrese su busqueda:</h2>
+
+    <form action='/resultadosBusqueda/' method="GET">
+            <input type="text" name="busqueda">
+            <input type="submit" value="Buscar">
+    
+    </form>
+
+{%endblock%}
+</body>
+
+</html>
